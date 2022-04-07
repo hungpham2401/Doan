@@ -1,0 +1,24 @@
+﻿
+.search-query:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.search_container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn-main {
+    background-color: #FC8A35;
+    color: #ffffff;
+}
+
+.ui-autocomplete {
+    width: 445px !important;
+    background-color: #fff;
+}
+
+.highlight-autocomplete {
+    color: #FC8A35;
+}
