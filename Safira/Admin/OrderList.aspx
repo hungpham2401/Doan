@@ -14,7 +14,7 @@
         <div class="workplace">
             <div class="page-header">
                 <h1>
-                    Order List
+                   Danh sách đơn hàng
                 </h1>
             </div>
 
@@ -25,7 +25,7 @@
                         <div class="isw-grid">
                         </div>
                         <h1>
-                            Order List
+                            Danh sách đơn hàng
                         </h1>
                         <ul class="buttons">
                             <li>
@@ -54,7 +54,7 @@
                         <div class="dataTables_length">
                             <asp:LinkButton runat="server" ID="LinkButton_ClearSearch"
                                 OnClick="LinkButton_ClearSearch_Click"
-                                class="btn input-icon" Style="width: 80px; background: #1267b3">
+                                class="btn input-icon" Style="width: 80px;">
                                 <i class="isw-cancel"></i>Hủy bộ lọc
                             </asp:LinkButton>
                         </div>
@@ -124,16 +124,16 @@
                                             <td class="center middle function">
 
                                                 <p class="info">
-                                                    <a Style="background: #1267b3" href='<%# Eval("ID", "OrderDetail.aspx?id={0}") %>' class="btn btn-small btn-block block tip fancybox-iframe" runat="server">
-                                                        <span class="icon-zoom-in icon-white"></span>Order Info
+                                                    <a href='<%# Eval("ID", "OrderDetail.aspx?id={0}") %>' class="btn btn-small btn-block block tip fancybox-iframe btn-info" runat="server">
+                                                        <span class="icon-zoom-in icon-white "></span>Xem chi tiết
                                                     </a>
 
-                                                    <asp:LinkButton Style="background: #1267b3" runat="server" ID="LinkButton_Delete"
+                                                    <asp:LinkButton runat="server" ID="LinkButton_Delete"
                                                         OnClick="LinkButton_Delete_Click"
                                                         OnClientClick="return confirm('Bạn có chắc muốn xóa không?');"
                                                         CommandArgument='<%# Eval ("ID") %>'
-                                                        class="btn btn-small btn-block block tip">
-                                                         <span class="icon-trash icon-white"></span> Delete
+                                                        class="btn btn-small btn-block block tip btn-danger">
+                                                         <span class="icon-trash icon-white"></span> Xóa dữ liệu này
                                                     </asp:LinkButton>
                                                 </p>
                                             </td>

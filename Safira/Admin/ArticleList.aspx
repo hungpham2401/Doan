@@ -152,12 +152,12 @@
                                             </td>
                                             <td class="center middle function">
                                                 <p class="info">
-                                                    <a runat="server" title='<%# Eval("Title") %>' class="btn btn-small btn-block block tip fancybox-iframe"
+                                                    <a runat="server" title='<%# Eval("Title") %>' class="btn btn-small btn-block block tip fancybox-iframe btn-info"
                                                         href='<%# Eval("ID","ArticleDetail.aspx?id={0}") %>'>
                                                         <span class="icon-zoom-in icon-white"></span>Hiển thị chi tiết
                                                     </a>
 
-                                                    <a runat="server" class="btn btn-small btn-block block tip"
+                                                    <a runat="server" class="btn btn-small btn-block block tip btn-warning"
                                                         href='<%# Eval("ID","ArticleEdit.aspx?id={0}") %>'>
                                                         <span class="icon-edit icon-white"></span>Chỉnh sửa thông tin
                                                     </a>
@@ -166,7 +166,7 @@
                                                         OnClick="LinkButton_Delete_Click"
                                                         OnClientClick="return confirm('Bạn có chắc muốn xóa không');"
                                                         CommandArgument='<%# Eval("ID") %>'
-                                                        class="btn btn-small btn-block block tip">
+                                                        class="btn btn-small btn-block block tip btn-danger">
                                                         <span class="icon-trash icon-white"></span>Xóa dữ liệu này
                                                     </asp:LinkButton>
                                                     <%-- Kích hoạt --%>

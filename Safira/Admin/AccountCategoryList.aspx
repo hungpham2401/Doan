@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div class="tar">
-                            <a href="AccountList.html" type="button" class="btn active">
+                            <a href="AccountList.aspx" type="button" class="btn active">
                                 <i class="icon-arrow-left"></i> Trở về trang danh sách tài khoản
                             </a>
                         </div>

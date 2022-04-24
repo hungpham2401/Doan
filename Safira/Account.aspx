@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcrumbs_area">
-                    <div class="breadcrumb_content" style="margin: 0 auto;">
+                    <div class="breadcrumb_content" style="margin: 0 8px;">
                         <ul>
                             <li><a runat="server" href="~/Default.aspx">Trang chủ</a></li>
                             <li>Tài khoản</li>

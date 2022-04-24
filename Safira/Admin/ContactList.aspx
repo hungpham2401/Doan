@@ -131,7 +131,7 @@
                                                     CommandArgument='<%# Eval("ID") %>'
                                                     OnClientClick="return confirm('Bạn muốn xóa tài khoản này không')"
                                                     OnClick="LinkButton_Delete_Click"
-                                                    class="btn btn-small btn-block block tip">
+                                                    class="btn btn-small btn-block block tip btn-danger">
                                                           <span class="icon-trash icon-white"></span>Xóa dữ liệu này
                                                 </asp:LinkButton>
 

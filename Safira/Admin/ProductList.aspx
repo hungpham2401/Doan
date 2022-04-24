@@ -153,7 +153,7 @@
                                             <td class="center middle function">
                                                 <p class="info">
 
-                                                    <a class="btn btn-small btn-block block tip" runat="server" href='<%# Eval("ID","~/Admin/ProductEdit.aspx?id={0}") %>'>
+                                                    <a class="btn btn-small btn-block block tip btn-warning" runat="server" href='<%# Eval("ID","~/Admin/ProductEdit.aspx?id={0}") %>'>
                                                         <span class="icon-edit icon-white"></span>Chỉnh sửa thông tin
                                                     </a>
 
@@ -162,7 +162,7 @@
                                                         CommandArgument='<%# Eval("ID") %>'
                                                         OnClientClick="return confirm('Bạn muốn xóa tài khoản này không')"
                                                         OnClick="LinkButton_Delete_Click"
-                                                        class="btn btn-small btn-block block tip">
+                                                        class="btn btn-small btn-block block tip btn-danger">
                                                           <span class="icon-trash icon-white"></span>Xóa dữ liệu này
                                                     </asp:LinkButton>
 

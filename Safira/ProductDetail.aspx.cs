@@ -127,7 +127,7 @@ public partial class ProductDetail : System.Web.UI.Page
         {
             LoadData();
         }
-
+        var quantity = Request.Form["quantity"].ToInt();
         //Kiểm tra món hàng hiện tại đã có trong giỏ chưa
         CartItem cartItem;
 
@@ -135,7 +135,7 @@ public partial class ProductDetail : System.Web.UI.Page
         {
 
             cartItem = new CartItem();
-            cartItem.Quantity = 1;
+            cartItem.Quantity = quantity;
 
             //Gán thông tin khác
             cartItem.ID = id;
@@ -153,9 +153,63 @@ public partial class ProductDetail : System.Web.UI.Page
         {
             //Món hàng đã có sẵn
             cartItem = SessionUtility.Cart.CartItems[id];
-            cartItem.Quantity += 1;
+            cartItem.Quantity += quantity;
 
         }
+
+    }
+
+
+    protected void LinkButton_ToCart_Click(object sender, EventArgs e)
+    {
+        //Khai báo button hiện tại đã được nhấn
+        Button LinkButton_ToCart = sender as Button;
+
+        //Lấy ID đang lưu trữ trong thuộc tính
+        int id = LinkButton_ToCart.CommandArgument.ToInt();
+
+        //Vào Db lấy ra món hàng
+        DBEntities db = new DBEntities();
+        var item = db.Products.Where(q => q.ProductID == id).FirstOrDefault();
+
+        if (item == null)
+        {
+            LoadData();
+        }
+        //Lấy Số lượng
+
+        var quantity = Request.Form["quantity"].ToInt();
+
+        //Kiểm tra món hàng hiện tại đã có trong giỏ chưa
+        CartItem cartItem;
+
+        if (!SessionUtility.Cart.CartItems.ContainsKey(id))
+        {
+
+            cartItem = new CartItem();
+            cartItem.Quantity = quantity;
+
+            //Gán thông tin khác
+            cartItem.ID = id;
+            cartItem.Title = item.Title;
+            cartItem.Avatar = item.Avatar;
+            cartItem.Description = item.Description;
+            cartItem.Price = item.Price.ToInt();
+            cartItem.OldPrice = item.OldPrice.ToInt();
+
+            //Cho vào giỏ
+            SessionUtility.Cart.CartItems.Add(id, cartItem);
+        }
+        //Nếu chưa có thì tạo mới;
+        else
+        {
+            //Món hàng đã có sẵn
+            cartItem = SessionUtility.Cart.CartItems[id];
+            cartItem.Quantity += quantity;
+
+        }
+
+        Response.Redirect("~/ProductShoppingCart.aspx");
 
     }
 
