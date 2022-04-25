@@ -5,7 +5,7 @@ public class NL_Checkout
 {
 
     private string nganluong_url = "https://www.nganluong.vn/checkout.php";
-    private string merchant_site_code = "39244";    //thay mã merchant site mà bạn đã đăng ký vào đây
+    private string merchant_site_code = "39244"; //949821   //thay mã merchant site mà bạn đã đăng ký vào đây
     private string secure_pass = "654321";  //thay mật khẩu giao tiếp giữa website của bạn với NganLuong.vn mà bạn đã đăng ký vào dây
     //private string nganluong_url = "https://sandbox.nganluong.vn:8088/nl30/checkout.php";
     //private string merchant_site_code = "50636";    //thay mã merchant site mà bạn đã đăng ký vào đây
