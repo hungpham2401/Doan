@@ -57,8 +57,7 @@ public partial class ucMenuArea : System.Web.UI.UserControl
         Repeater_MenuArea.DataBind();
 
 
-        Repeater_Main.DataSource = query.ToList();
-        Repeater_Main.DataBind();
+        
     }
 
     public void LoadDataArticle()
@@ -85,18 +84,21 @@ public partial class ucMenuArea : System.Web.UI.UserControl
     {
         string keyword = input_Search.Value.Trim();
 
-        string searchMain = DropDownList_Search.SelectedValue;
-        string url;
-        if (searchMain == "search-product")
-        {
-            url = "~/ProductGrid.aspx?keyword=" + keyword;
-            Response.Redirect(url);
-        }
-        else if (searchMain == "search-article")
-        {
-            url = "~/ProductGrid.aspx?keyword=" + keyword;
-            Response.Redirect(url);
-        }
+        //string searchMain = DropDownList_Search.SelectedValue;
+        string url = "~/ProductGrid.aspx?keyword=" + keyword;
+        Response.Redirect(url);
+
+        //string url;
+        //if (searchMain == "search-product")
+        //{
+        //    url = "~/ProductGrid.aspx?keyword=" + keyword;
+        //    Response.Redirect(url);
+        //}
+        //else if (searchMain == "search-article")
+        //{
+        //    url = "~/ProductGrid.aspx?keyword=" + keyword;
+        //    Response.Redirect(url);
+        //}
 
 
     }

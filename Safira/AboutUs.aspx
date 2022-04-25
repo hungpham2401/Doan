@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcrumbs_area">
-                    <div class="breadcrumb_content" style="margin: 0 auto;">
+                    <div class="breadcrumb_content" style="margin: 0 8px;">
                         <ul>
                             <li><a runat="server" href="~/Default.aspx">Trang chủ</a></li>
                             <li>Về chúng tôi</li>
@@ -32,7 +32,7 @@
                         <figcaption class="about_content">
                             <h1>Luôn tươi mới - Tốt cho sức khỏe - Nguồn gốc rõ ràng</h1>
                             <p>
-                                Thực Phẩm Safira là một hệ thống cung cấp thực phẩm sạch, tất cả các nguyên liệu thực phẩm đều được nhập trực tiếp từ các vựa nông sản và nhà vườn chính gốc.
+                                Thực Phẩm Mạnh Hùng là một hệ thống cung cấp thực phẩm sạch, tất cả các nguyên liệu thực phẩm đều được nhập trực tiếp từ các vựa nông sản và nhà vườn chính gốc.
 Chuyên cung cấp các loại thực phẩm tươi sống, thực phẩm nông sản, thực phẩm khô, trái cây, rau củ quả cho các nhà hàng, quán ăn, trường mầm non...
                             </p>
                             <div class="about_signature">

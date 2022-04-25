@@ -43,7 +43,7 @@
                                                             ClientIDMode="AutoID"
                                                             OnClientClick="alert('Thêm giỏ hàng thành công')"
                                                             OnClick="Button_AddCart_Click">
-                                                                                       <span class="lnr lnr-cart"></span>
+                                                            <span class="lnr lnr-cart"></span>
                                                         </asp:LinkButton>
 
                                                     </li>

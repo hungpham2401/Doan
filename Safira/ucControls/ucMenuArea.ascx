@@ -18,38 +18,14 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="header_social">
-                            <ul>
-                                <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                                <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="language_currency text-right">
                             <ul>
-                                <li class="language"><a href="#">Ngôn ngữ <i class="icon-right ion-ios-arrow-down"></i></a>
-                                    <ul class="dropdown_language">
-                                        <li><a href="#">French</a></li>
-                                        <li><a href="#">Spanish</a></li>
-                                        <li><a href="#">Russian</a></li>
-                                    </ul>
-                                </li>
-                                <li class="currency"><a href="#">Tiền tệ <i class="icon-right ion-ios-arrow-down"></i></a>
-                                    <ul class="dropdown_currency">
-                                        <li><a href="#">€ Euro</a></li>
-                                        <li><a href="#">£ Pound Sterling</a></li>
-                                        <li><a href="#">$ US Dollar</a></li>
-                                    </ul>
-                                </li>
-                                <li runat="server" id="div_Logout" class="li_logout">
-                                    <asp:LinkButton Text="text" class="btn btn-sm btn-danger" runat="server" ID="LinkButton_Logout" OnClick="LinkButton_Logout_Click">
-                                    <i class="ion-log-out"></i> Đăng xuất
-                                    </asp:LinkButton>
-
-                                </li>
+                                
+                               
                             </ul>
                         </div>
                     </div>
@@ -63,17 +39,17 @@
                     <div class="col-lg-2 col-md-3 col-sm-3 col-3">
                         <div class="logo">
                             <a runat="server" href="~/">
-                                <img src="assets/img/logo/logo.png" alt=""></a>
+                                <img src="assets/img/logo/logo1.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-10 col-md-6 col-sm-7 col-8">
                         <div class="header_right_info">
-                            <div class="search_container mobail_s_none flex-grow-1">
+                            <div class="search_container mobail_s_none flex-grow-1" style="padding-left: 72px; padding-right: 40px;">
                                 <asp:Panel runat="server" DefaultButton="LinkButton_Search" class="input-group hover_category">
-                                    <asp:DropDownList runat="server" ID="DropDownList_Search" class="cate-dropdown hidden-xs hidden-sm select_option">
+                                    <%--<asp:DropDownList runat="server" ID="DropDownList_Search" class="cate-dropdown hidden-xs hidden-sm select_option">
                                         <asp:ListItem Value="search-product" Text="Sản phẩm" />
                                         <asp:ListItem Value="search-article" Text="Tin tức" />
-                                    </asp:DropDownList>
+                                    </asp:DropDownList>--%>
                                     <input type="text" runat="server" id="input_Search" class="form-control search-query" placeholder="Bạn muốn mua gì?" name="search">
 
                                     <asp:LinkButton runat="server" class="btn btn-main btn-search" ID="LinkButton_Search" OnClick="LinkButton_Search_Click">
@@ -91,13 +67,18 @@
                                     </ul>
                                     <ul runat="server" id="a_wellcome">
                                         <li><a runat="server" href="~/ProductShoppingCart.aspx">Xin chào ! <span runat="server" id="span_FullName"></span></a></li>
-
+                                        <li runat="server" id="div_Logout" class="li_logout">
+                                            <asp:LinkButton Text="text"  data-tippy="Đăng xuất"
+                                                            data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true" class="btn btn-sm btn-light" runat="server" ID="LinkButton_Logout" OnClick="LinkButton_Logout_Click">
+                                                 <i class="ion-log-out"></i> 
+                                            </asp:LinkButton>
+                                        </li>
                                     </ul>
                                 </div>
 
 
                                 <%-- Shopping cart --%>
-                                <uc1:ucMiniShoppingCart runat="server" ID="ucMiniShoppingCart" />
+                                <uc1:ucminishoppingcart runat="server" id="ucMiniShoppingCart" />
 
                             </div>
                         </div>
@@ -137,38 +118,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="categories_menu categories_three ">
-                            <div class="categories_title active">
-                                <h2 class="categori_toggle">Tất cả danh mục </h2>
-                            </div>
-                            <div class="categories_menu_toggle" style="display:none">
-                                <ul>
-                                    <li>
-                                        <a class="active" runat="server" href="~/">Trang chủ</a>
-
-                                    </li>
-                                    <asp:Repeater runat="server" ID="Repeater_Main">
-                                        <ItemTemplate>
-                                            <li>
-                                                <a runat="server" href='<%# Eval("ID","~/ProductGrid.aspx?mid={0}") %>'><%# Eval("Title") %></a>
-
-                                            </li>
-
-
-                                        </ItemTemplate>
-                                    </asp:Repeater>
-
-                                    <li>
-                                        <a runat="server" href="~/AboutUs.aspx">Giới thiệu</a>
-
-                                    </li>
-                                    <li><a runat="server" href="~/Contact.aspx">Liên hệ</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                       
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-7 col-8">
+
                         <!--main menu start-->
                         <div class="main_menu menu_position">
                             <nav>
@@ -212,7 +166,7 @@
                     </div>
                     <div class="col-lg-3 ">
                         <div class="call-support ">
-                            <p><a href="tel:0972332803">0972332803</a>Hổ trợ khách hàng</p>
+                            <p><a href="tel:0869324228">0869324228</a>Hổ trợ khách hàng</p>
                         </div>
                     </div>
                 </div>

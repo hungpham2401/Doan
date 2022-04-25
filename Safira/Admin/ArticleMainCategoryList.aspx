@@ -8,7 +8,7 @@
     <div class="content">
         <div class="workplace">
             <div class="page-header">
-                <h1>Article Main Category
+                <h1>DANH MỤC TIN TỨC (CẤP CHA)
                 </h1>
             </div>
 
@@ -17,7 +17,7 @@
                     <div class="head clearfix">
                         <div class="isw-folder">
                         </div>
-                        <h1>Article Main Category
+                        <h1>Danh sách loại
                         </h1>
                     </div>
                     <div class="block-fluid">
@@ -34,7 +34,7 @@
                     <div class="head clearfix">
                         <div class="isw-list">
                         </div>
-                        <h1>Selecting Article Main Category Info
+                        <h1>Chi tiết loại đang chọn
                         </h1>
                         <ul class="buttons">
                             <li>
@@ -49,7 +49,7 @@
                         <!--Mã số + vị trí-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Article Main Cat ID:
+                                Mã Danh Mục:
                             </div>
                             <div class="span2">
                                 <input runat="server" id="input_ID" type="text" class="tipb" readonly="readonly" title="Mã số tự động (không cần nhập)" />
@@ -73,7 +73,7 @@
                         <!--Tiêu đề-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Title:
+                                Tiêu Đề:
                             </div>
                             <div class="span10">
                                 <input runat="server" id="input_Title" type="text" />
@@ -83,7 +83,7 @@
                         <!--Mô tả-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Description:
+                                Mô Tả:
                             </div>
                             <div class="span10">
                                 <textarea runat="server" id="textarea_Description" style="min-height: 50px; width: 100%;"></textarea>
@@ -110,7 +110,7 @@
                         <!--Trạng thái-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Status:
+                                Trạng Thái:
                             </div>
                             <div class="span10">
                                 <label class="checkbox inline">
@@ -126,8 +126,8 @@
                         <!--Lưu + thông báo-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                <asp:LinkButton Style="background: #1267b3" runat="server" class="btn mybtn" ID="LinkButton_Save" OnClick="LinkButton_Save_Click">
-                                    <i class="isw-save"></i>Save
+                                <asp:LinkButton runat="server" class="btn mybtn" ID="LinkButton_Save" OnClick="LinkButton_Save_Click">
+                                    <i class="isw-save"></i>Lưu
                                 </asp:LinkButton>
                             </div>
                             <div class="span10">
@@ -141,7 +141,7 @@
                 </div>
                 <div class="tar">
                     <a href="PictureList.aspx" type="button" class="btn active">
-                        <i class="icon-arrow-left"></i>Back Article List
+                        <i class="icon-arrow-left"></i>Trở về trang danh sách tin tức
                     </a>
                 </div>
             </div>

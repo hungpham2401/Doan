@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcrumbs_area">
-                    <div class="breadcrumb_content" style="margin: 0 auto;">
+                    <div class="breadcrumb_content" style="margin: 0 8px;">
                         <ul>
                             <li><a runat="server" href="~/Default.aspx">Trang chủ</a></li>
                             <li>Trạng thái thanh toán</li>
@@ -91,7 +91,7 @@
 
     <div class="container">
         <div class="row" style="margin-top: 20px; margin-left: 3px">
-            <div class="col-md-6" style="border: solid; color: #FC8A35; height: 350px;padding-top:15px;border-radius: 5px;">
+            <div class="col-md-6" style="border: solid; color: #23883a; height: 350px;padding-top:15px;border-radius: 5px;">
                 <uc1:ucMessage runat="server" ID="ucMessage" />
                 <p id="animationfree">
                     <img style="width: 250px; height: 250px" src="assets/img/icon/giao-hang.png" />
@@ -99,7 +99,7 @@
             </div>
             <div class="col-md-1">
             </div>
-            <div class="col-md-5" style="border: solid; color: #FC8A35; height: 350px">
+            <div class="col-md-5" style="border: solid; color: #23883a; height: 350px">
                 <div style=" font-size: 18px; text-align: center; font-weight: 600; margin-top: 10px;border-radius: 5px;">Chi tiết đơn hàng</div>
                 <div style="margin-left: 20px; font-size: 15px; line-height: 40px;">
                     <asp:Repeater runat="server" ID="Repeater_OrderDetail">

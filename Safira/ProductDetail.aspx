@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ProductDetail.aspx.cs" Inherits="ProductDetail" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/MasterPage.master" autoeventwireup="true" codefile="ProductDetail.aspx.cs" inherits="ProductDetail" %>
 
-<%@ Register Src="~/ucControls/ucSpecialProduct.ascx" TagPrefix="uc1" TagName="ucSpecialProduct" %>
+<%@ register src="~/ucControls/ucSpecialProduct.ascx" tagprefix="uc1" tagname="ucSpecialProduct" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcrumbs_area">
-                    <div class="breadcrumb_content" style="margin: 0 auto;">
+                    <div class="breadcrumb_content" style="margin: 0 8px;">
                         <ul>
                             <li><a runat="server" href="~/Default.aspx">Trang chủ</a></li>
                             <li>Chi tiết sản phẩm</li>
@@ -22,10 +22,10 @@
     </div>
 
     <asp:Repeater runat="server" ID="Repeater_Product">
-        <ItemTemplate>
+        <itemtemplate>
 
             <!--product details start-->
-            <div class="product_details mt-70 mb-70">
+            <div class="product_details mt-30 mb-70">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
@@ -38,13 +38,13 @@
                                 <div class="single-zoom-thumb">
                                     <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
                                         <asp:Repeater runat="server" ID="Repeater_ImageList" DataSource='<%# Eval("ImageList").SplitToText(";") %>'>
-                                            <ItemTemplate>
+                                            <itemtemplate>
                                                 <li>
                                                     <a href='<%# Eval("Text") %>' class="elevatezoom-gallery active" data-update="" data-image='<%# Eval("Text") %>' data-zoom-image='<%# Eval("Text") %>'>
                                                         <img runat="server" src='<%# Eval("Text") %>' alt="Thumbnail 2" />
                                                     </a>
                                                 </li>
-                                            </ItemTemplate>
+                                            </itemtemplate>
                                         </asp:Repeater>
 
                                     </ul>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="product_d_right">
-                                <form action="#">
+                                <form action="#" >
 
                                     <h1><a href="#"><%# Eval("Title") %></a></h1>
 
@@ -88,37 +88,49 @@
                                                 </ItemTemplate>
                                             </asp:Repeater>
                                         </ul>--%>
-
                                     </div>
+                                    
+                                    <div class="row">
 
-                                    <div class="product_variant quantity">
-                                        <asp:Button Text="Thêm vào giỏ hàng"
-                                            runat="server"
-                                            ID="LinkButton_AddCart"
-                                            OnClick="LinkButton_AddCart_Click"
-                                            CommandArgument='<%# Eval("ID") %>'
-                                            ClientIDMode="AutoID"
-                                            Style="margin: 0"
-                                            class="button"
-                                            OnClientClick="alert('Thêm giỏ hàng thành công')"></asp:Button>
+                                        <div class="col-lg-4 col-md-4" style="float: left; width: 135px; display: flex; }">
+                                            <input onclick="var result = document.getElementById('txtQuantity'); var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' style="background: #fff; float: left; border: 1px solid #e1e1e1; cursor: pointer; font-weight: 600; outline: none; height: 45px; width: 45px; text-align: center; border-radius: 0; font-size: 20px; color: black; padding: 0; display: flex; justify-content: center; align-items: center; line-height: unset;" />
+                                            <input ID='txtQuantity' min='1' name='quantity' type='text' value='1' placeholder="1" style="background: #fff; font-weight: 600; height: 45px; text-align: center; width: 45px; border: 1px solid #e1e1e1; border-left: none; border-right: none; border-radius: 0; float: left; -webkit-appearance: none; font-size: 15px; color: black; padding: 0;" />
+                                            <input onclick="var result = document.getElementById('txtQuantity'); var qty = result.value; if( !isNaN(qty) &amp; qty < 99 ) result.value++;return false;" type='button' value='+' style="background: #fff; float: left; border: 1px solid #e1e1e1; cursor: pointer; font-weight: 600; outline: none; height: 45px; width: 45px; text-align: center; border-radius: 0; font-size: 20px; color: black; padding: 0; display: flex; justify-content: center; align-items: center; line-height: unset;" />
+                                        </div>
+
+
+                                        
+
+                                        <div class="product_variant quantity col-lg-4 col-md-4" style=" margin:0; ">
+                                            <asp:Button Text="Thêm vào giỏ hàng"
+                                                runat="server"
+                                                ID="LinkButton_AddCart"
+                                                OnClick="LinkButton_AddCart_Click"
+                                                CommandArgument='<%# Eval("ID") %>'
+                                                ClientIDMode="AutoID"
+                                                Style="margin: 0; min-width: 175px; border-radius: unset;"
+                                                class="button"
+                                                OnClientClick="alert('Thêm giỏ hàng thành công')"></asp:Button>
+                                        </div>
+                                        <div class="product_variant quantity col-lg-4 col-md-4" style="border-radius: unset; margin:0; ">
+                                            <asp:Button Text="Mua ngay"
+                                                runat="server"
+                                                ID="LinkButton_ToCart"
+                                                OnClick="LinkButton_ToCart_Click"
+                                                CommandArgument='<%# Eval("ID") %>'
+                                                ClientIDMode="AutoID"
+                                                Style="margin: 0; min-width: 175px; border-radius: unset;"
+                                                class="button"></asp:Button>
+                                        </div>
+                                            
                                     </div>
+                            </form>
 
 
-                                </form>
-                                <div class="priduct_social">
-                                    <ul>
-                                        <li><a class="facebook" href="#" title="facebook"><i class="fa fa-facebook"></i>Like</a></li>
-                                        <li><a class="twitter" href="#" title="twitter"><i class="fa fa-twitter"></i>tweet</a></li>
-                                        <li><a class="pinterest" href="#" title="pinterest"><i class="fa fa-pinterest"></i>save</a></li>
-                                        <li><a class="google-plus" href="#" title="google +"><i class="fa fa-google-plus"></i>share</a></li>
-                                        <li><a class="linkedin" href="#" title="linkedin"><i class="fa fa-linkedin"></i>linked</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <!--product details end-->
 
@@ -214,7 +226,7 @@
             </div>
             <!--product info end-->
 
-        </ItemTemplate>
+        </itemtemplate>
     </asp:Repeater>
 
 
@@ -231,7 +243,7 @@
                 <div class="col-12">
                     <div class="product_carousel product_column5 owl-carousel">
                         <asp:Repeater runat="server" ID="Repeater_ProductRelated">
-                            <ItemTemplate>
+                            <itemtemplate>
                                 <article class="single_product">
                                     <figure>
                                         <div class="product_thumb">
@@ -255,11 +267,11 @@
                                                             ClientIDMode="AutoID"
                                                             OnClientClick="alert('Thêm giỏ hàng thành công')"
                                                             OnClick="Button_AddCart_Click">
-                                                                                       <span class="lnr lnr-cart"></span>
+                                                            <span class="lnr lnr-cart"></span>
                                                         </asp:LinkButton>
 
                                                     </li>
-                                                    <li class="quick_button"><a  runat="server" href='<%# Eval("ID","~/ProductDetail.aspx?id={0}") %>' data-tippy="Xem chi tiết" data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true" ><span class="lnr lnr-magnifier"></span></a></li>
+                                                    <li class="quick_button"><a runat="server" href='<%# Eval("ID","~/ProductDetail.aspx?id={0}") %>' data-tippy="Xem chi tiết" data-tippy-placement="top" data-tippy-arrow="true" data-tippy-inertia="true"><span class="lnr lnr-magnifier"></span></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -272,7 +284,7 @@
                                         </figcaption>
                                     </figure>
                                 </article>
-                            </ItemTemplate>
+                            </itemtemplate>
                         </asp:Repeater>
                     </div>
                 </div>

@@ -7,7 +7,7 @@
     <div class="content">
         <div class="workplace">
             <div class="page-header">
-                <h1>Article Category
+                <h1>DANH MỤC TIN TỨC (CẤP CON)
                 </h1>
             </div>
 
@@ -17,7 +17,7 @@
                     <div class="head clearfix">
                         <div class="isw-folder">
                         </div>
-                        <h1>Article Category
+                        <h1>Danh sách loại
                         </h1>
                     </div>
                     <!--Loại Cấp Cha + Cấp Con-->
@@ -26,7 +26,7 @@
                         <div class="row-form clearfix" style="padding: 7px 16px;">
                             <asp:DropDownList runat="server" ID="DropDownList_MainCategory_Left" AutoPostBack="true"
                                 OnSelectedIndexChanged="DropDownList_MainCategory_Left_SelectedIndexChanged" />
-                            <span style="text-align: center; display: block;">Select Article Main Cat.</span>
+                            <span style="text-align: center; display: block;">Chọn Loại Tin Tức.</span>
 
                         </div>
                         <!--Loại Cấp Con-->
@@ -43,7 +43,7 @@
                     <div class="head clearfix">
                         <div class="isw-list">
                         </div>
-                        <h1>Selecting Article Info
+                        <h1>Chi tiết loại đang chọn
                         </h1>
                         <ul class="buttons">
                             <li>
@@ -62,23 +62,23 @@
                         <!--Chọn Loại Cấp Cha-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Article Category:
+                                Danh Mục Tin:
                             </div>
                             <div class="span10">
                                 <asp:DropDownList runat="server" ID="DropDownList_MainCategory" />
-                                <span>Chọn Loại Cấp Cha của loại này.</span>
+                                <span>Chọn Danh Mục Cấp Cha của loại này.</span>
                             </div>
                         </div>
                         <!--Mã số + vị trí-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Article Category ID:
+                                Mã Danh Mục Tin:
                             </div>
                             <div class="span2">
                                 <input runat="server" id="input_ID" type="text" class="tipb" readonly="readonly" title="Mã số tự động (không cần nhập)" />
                             </div>
                             <div class="span1">
-                                Position:
+                                Vị Trí:
                             </div>
                             <div class="span1" style="margin-left: 2px;">
                                 <input runat="server" id="input_Position" type="text" class="tipb" title="Dùng để sắp xếp thứ tự" />
@@ -96,7 +96,7 @@
                         <!--Tiêu đề-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Title:
+                                Tiêu Đề:
                             </div>
                             <div class="span10">
                                 <input runat="server" id="input_Title" type="text" />
@@ -106,7 +106,7 @@
                         <!--Mô tả-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Description:
+                                Mô tả:
                             </div>
                             <div class="span10">
                                 <textarea runat="server" id="textarea_Description" style="min-height: 50px; width: 100%;"></textarea>
@@ -133,25 +133,25 @@
                         <!--Trạng thái-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                Status:
+                                Trạng Thái:
                             </div>
                             <div class="span10">
                                 <label class="checkbox inline">
                                     <input runat="server" id="radio_Active" name="status" type="radio" checked />
-                                    Unlock
+                                   Cho phép hiển thị
                                 </label>
                                 <label class="checkbox inline">
                                     <input runat="server" type="radio" name="status" id="radio_Lock" />
-                                    Locking
+                                     Tạm ẩn
                                 </label>
                             </div>
                         </div>
                         <!--Lưu + thông báo-->
                         <div class="row-form clearfix">
                             <div class="span2">
-                                <asp:LinkButton Style="background: #1267b3" Text="text" runat="server" ID="LinkButton_Save"
+                                <asp:LinkButton  Text="text" runat="server" ID="LinkButton_Save"
                                     class="btn mybtn" OnClick="LinkButton_Save_Click">
-                                     <i class="isw-save"></i>Save
+                                     <i class="isw-save"></i>Lưu
                                 </asp:LinkButton>
                             </div>
                             <div class="span10">
@@ -164,7 +164,7 @@
                 <!--Link trở lại-->
                 <div class="tar">
                     <a href="PictureList.aspx" type="button" class="btn active">
-                        <i class="icon-arrow-left"></i>Back Article List
+                        <i class="icon-arrow-left"></i>Trở về trang danh sách Sản Phẩm
                     </a>
                 </div>
             </div>

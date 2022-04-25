@@ -3,6 +3,7 @@
 @import "colorbox/colorbox.css";
 @import "wookmark/wookmark.css";
 @import "mystyle.css";
+@import "customAdmin.css";
 
 /*mediaScreen-dat o cuoi file*/
 @import "mediaScreen.css";
