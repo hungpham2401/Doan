@@ -20,6 +20,9 @@
 .isw-archive {
     background: url(../img/icons/ws/ic_archive.png) center center no-repeat transparent
 }
+.isw-home {
+    background: url(../img/icons/ws/icons8-home-64.png) center center no-repeat transparent
+}
 
 .isw-attachment {
     background: url(../img/icons/ws/ic_attachment.png) center center no-repeat transparent
@@ -14086,7 +14089,7 @@ div.tagsinput {
 
 .header {
     display: block;
-    height: 40px;
+    height: 60px;
     width: 100%;
     position: absolute;
     z-index: 1999;
@@ -14097,7 +14100,7 @@ div.tagsinput {
         display: block;
         float: right;
         padding: 8px 20px 0 0;
-        color: #fff;
+        color: #30557F;
         font-weight: 700
     }
 
@@ -14174,7 +14177,7 @@ div.tagsinput {
     display: block;
     width: 219px;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 60px;
     z-index: 999;
     background: url(../img/backgrounds/menu.jpg) left top repeat;
     border-bottom: 1px solid #CCC;
@@ -14302,9 +14305,8 @@ div.tagsinput {
 }
 
     .navigation li {
-        border-bottom: 1px solid #514654;
-        border-right: 1px solid #514654;
-        background: url(../img/styles/default/backgrounds/menu-item.jpg) left top repeat-x;
+        background-color: #3C4962;
+        box-shadow: 0 2px 12px 0 rgb(0 0 0 / 6%);
         padding: 0;
         margin: 0;
         display: block;
@@ -14320,19 +14322,7 @@ div.tagsinput {
 }
 
 .menu .navigation li a:hover, .menu .navigation li a.active {
-    border-color: #514654;
-    border-top-color: #514654;
-    background: #9a55ff;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgb(154, 85, 255);
+    background: #59667D;
 }
 
 
@@ -14756,7 +14746,7 @@ div.tagsinput {
 .content {
     position: relative;
     margin-left: 220px;
-    padding-top: 40px
+    padding-top: 60px
 }
 
     .content .workplace {
@@ -14777,7 +14767,7 @@ div.tagsinput {
             -ms-border-top-right-radius: 3px;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
-            background-image: linear-gradient(to right, rgb(181 105 217), rgb(154, 85, 255));
+            background: #486B91;
         }
 
             .content .workplace .head h1, .content .workplace .head h2, .content .workplace .head h3, .content .workplace .head h4, .content .workplace .head h5, .content .workplace .head h6 {

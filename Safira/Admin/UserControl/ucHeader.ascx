@@ -1,11 +1,19 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucHeader.ascx.cs" Inherits="ucHeader" %>
+﻿<%@ control language="C#" autoeventwireup="true" codefile="ucHeader.ascx.cs" inherits="ucHeader" %>
 
 <div class="header headAd">
     <!--Nút ẩn/hiện menu bên góc trái-->
     <ul class="header_menu">
-        <li class="list_icon"><a href="#" class="tipr" title="Truy cập nhanh menu">&nbsp;</a></li>
+        <li class="list_icon">
+
+            <a href="#" class="tipr" title="Truy cập nhanh menu">&nbsp;</a>
+
+        </li>
     </ul>
+    <img src="img/logo/logo3.png" alt="" class="imglgA">
     <!--Logo-->
-    <a href="http://localhost:49939/" class="logo">Trang Chủ Bán Hàng
-    </a>
+    <div class="logo">
+         <a href="http://localhost:49939/"  class="logoa" ><img src="img/icons/ws/icons8-home-64.png" alt="" class="imglogo">Trang Chủ Bán Hàng</a>
+    </div>
+
+
 </div>
