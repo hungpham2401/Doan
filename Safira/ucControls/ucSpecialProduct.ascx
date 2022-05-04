@@ -27,7 +27,7 @@
                                                 <span class="label_new">New</span>
                                             </div>
                                             <div class="product_timing">
-                                                <div data-countdown="2021/12/15"></div>
+                                                <div data-countdown="2022/12/15"></div>
                                             </div>
                                             <div class="action_links">
                                                 <ul>
