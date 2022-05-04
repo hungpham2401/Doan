@@ -12,13 +12,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="slider_area owl-carousel">
-                        <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/slider1.jpg">
+                        <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/SliderMain2.jpg">
                             <div class="slider_content slider_c_three">
-                                <h1>Sản phẩm đến từ thiên nhiên</h1>
-                                <p>
+                                <h1 style="color : white">Sản phẩm đến từ thiên nhiên</h1>
+                                <p style="color : white">
                                     Bảo vệ sức khỏe - Cuộc sống tươi đẹp
                                 </p>
-                                <a href="~/">Xem thêm </a>
+                                <a href="~/" >Xem thêm </a>
                             </div>
                         </div>
                         <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/slider9.jpg">
