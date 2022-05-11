@@ -25,9 +25,11 @@
                         <h1>
                             Chào mừng đến với chương trình quản lý website.
                             <br />
-                            Hãy chọn Menu để đến trang chức năng
+                            Hãy chọn Menu để đến trang chức năng 
                         </h1>
+                        
                     </div>
+                    <img src="../../assets/img/product/nền.png" alt="Alternate Text" style="height=650px" />
                 </div>
             </div>
 </asp:Content>

@@ -5,11 +5,30 @@ public class NL_Checkout
 {
 
     private string nganluong_url = "https://www.nganluong.vn/checkout.php";
+    //private string merchant_site_code = "66269"; //949821   //thay mã merchant site mà bạn đã đăng ký vào đây
+    //private string secure_pass = "8e040a424a07abb53aff28a99ecce84d";  //thay mật khẩu giao tiếp giữa website của bạn với NganLuong.vn mà bạn đã đăng ký vào dây
+    //private string nganluong_url = "https://sandbox.nganluong.vn:8088/nl30/checkout.php";
+
+
+    // private string merchant_site_code = "66272"; //949821   //thay mã merchant site mà bạn đã đăng ký vào đây
+    //private string secure_pass = "5886f10f2a1ad77d6e09904abe5dbed2";
+
+
     private string merchant_site_code = "39244"; //949821   //thay mã merchant site mà bạn đã đăng ký vào đây
     private string secure_pass = "654321";  //thay mật khẩu giao tiếp giữa website của bạn với NganLuong.vn mà bạn đã đăng ký vào dây
-    //private string nganluong_url = "https://sandbox.nganluong.vn:8088/nl30/checkout.php";
-    //private string merchant_site_code = "50636";    //thay mã merchant site mà bạn đã đăng ký vào đây
-    //private string secure_pass = "b387fcfba0ba89b1b1830853a285917c";
+
+
+
+    //private string merchant_site_code = "66272"; //949821   //thay mã merchant site mà bạn đã đăng ký vào đây
+     //string secure_pass = "aa5dbf9e701dfab55910a17a31423e07";  //thay mật khẩu giao tiếp giữa website của bạn với NganLuong.vn mà bạn đã đăng ký vào dây
+
+    //public string nganluong_url = "https://www.nganluong.vn/checkout.php";
+    //public string merchant_site_code = "51474"; //thay mã merchant site mà b?n dã dang ký vào dây
+    //public string secure_pass = "9d5cd66d5337f1bacb256b653293129f";	//thay m?t kh?u giao ti?p gi?a website c?a b?n v?i NgânLu?ng.vn mà b?n dã dang ký vào dây
+
+
+    //private string merchant_site_code = "66272";    //thay mã merchant site mà bạn đã đăng ký vào đây
+    //private string secure_pass = "5886f10f2a1ad77d6e09904abe5dbed2";
     public string GetMD5Hash(string input)
     {
         System.Security.Cryptography.MD5CryptoServiceProvider x = new System.Security.Cryptography.MD5CryptoServiceProvider();

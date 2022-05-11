@@ -118,7 +118,7 @@
                                         <h5><a href="#">Admin</a></h5>
                                         <span>October 16, 2022 at 1:38 am</span>
                                     </div>
-                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
+                                    <p>Trang cập nhập rất nhiều tin tức mới</p>
                                     <div class="comment_reply">
                                         <a href="#">Reply</a>
                                     </div>
