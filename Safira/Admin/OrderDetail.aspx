@@ -99,15 +99,15 @@
                                     </div>
                                     <div class="span10">
                                         <label class="checkbox inline">
-                                            <input runat="server" id="radio_Order" type="radio" disabled="disabled" />
+                                            <input runat="server" id="radio_Order" name="radio" type="radio"  />
                                             Đặt hàng:
                                         </label>
                                         <label class="checkbox inline">
-                                            <input runat="server" id="radio_Deliver" type="radio" disabled="disabled" />
+                                            <input runat="server" id="radio_Deliver" name="radio" type="radio"  />
                                             Giao hàng:
                                         </label>
                                         <label class="checkbox inline">
-                                            <input runat="server" id="radio_Charge" type="radio" disabled="disabled" />
+                                            <input runat="server" id="radio_Charge" name="radio" type="radio"  />
                                             Thanh toán:
                                         </label>
                                     </div>

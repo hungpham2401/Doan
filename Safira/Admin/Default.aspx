@@ -29,7 +29,10 @@
                         </h1>
                         
                     </div>
-                    <img src="../../assets/img/product/nền.png" alt="Alternate Text" style="height=650px" />
+                    <div style=" height = 650px">
+                    <img  src="../../assets/img/product/nền.png" alt="Alternate Text" />
+
+                    </div>
                 </div>
             </div>
 </asp:Content>

@@ -108,7 +108,7 @@
                                                 Tổng Tiền: <%# Eval ("Total", "{0:0,00đ}") %>
                                                 <br />
                                             </td>
-                                            <td class=" middle">
+                                            <td class="middle">
                                                  Trạng Thái đơn hàng: <%# Eval ("OrderStatus").ToBool() == true ? "Đã lặp ": "Chưa lặp" %>
                                                 <br />
                                                  Trạng Thái giao hàng: <%# Eval ("DeliverStatus").ToBool() == true ? "Đã giao": "Chưa giao" %>

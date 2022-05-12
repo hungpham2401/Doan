@@ -437,6 +437,9 @@ textarea.auto-height {
     width: 272px;
     height: 30px;
 }
+.height-background{
+    height : 650px ;
+}
 
 .db-manager fieldset {
 }
