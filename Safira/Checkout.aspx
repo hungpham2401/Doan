@@ -122,6 +122,16 @@
                                     </div>
                                 </div>
                                 <div class="panel-default">
+                                    <input type="radio" runat="server" id="Radio1" name="checkout-option"  checked="true" />
+
+                                    <a href="#test" data-bs-toggle="collapse" aria-controls="method">&nbsp;Chuyển khoản trực tiếp và sẽ báo cho nhân viên cửa hàng</a>
+                                    <div id="test" class="collapse one" data-parent="#accordion">
+                                        <div class="card-body1">
+                                            <img src="assets/qr.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-default">
                                     <input type="radio" runat="server" id="input_checkout_online" name="checkout-option" />
 
                                     <a href="#method1" data-bs-toggle="collapse" aria-controls="method">&nbsp;Thanh toán qua ngân lượng</a>
