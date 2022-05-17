@@ -38,6 +38,12 @@ Chuyên cung cấp các loại thực phẩm tươi sống, thực phẩm nông 
                             <div class="about_signature">
                                 <img src="assets/img/about/about-us-signature.png" alt="">
                             </div>
+                            <div>
+                                <img  src="assets/anh1.jpg"/>
+                            </div>
+                            <div>
+                                <img  src="assets/anh2.jpg"/>
+                            </div>
                         </figcaption>
                     </figure>
                 </div>
@@ -111,7 +117,7 @@ Chuyên cung cấp các loại thực phẩm tươi sống, thực phẩm nông 
                                     <p>
                                         MIỄN PHÍ GIAO
 cho 5 đơn hàng đầu tiên từ 100.000đ
-(Với các khách hàng lần đầu mua hàng tại Safira kể từ ngày 7/5/2021 sẽ áp dụng chính sách mới: Miễn phí giao hàng cho 5 đơn hàng đầu tiên từ 100.000đ tối đa 15.000đ)
+(Với các khách hàng lần đầu mua hàng tại Safira kể từ ngày 7/5/2022 sẽ áp dụng chính sách mới: Miễn phí giao hàng cho 5 đơn hàng đầu tiên từ 100.000đ tối đa 15.000đ)
                                     </p>
                                      <%--  --%> 
                                 </div>
